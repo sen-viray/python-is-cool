@@ -1,17 +1,17 @@
-sum = 0
-count = 0
-ave = 0
+max = 0
+min = 100000000000000
 while True:
     n = input("Enter a number: ")
     if n =='done':
         break
     try:
         n =int(n)
-        sum = sum + n
-        count = count + 1
-        ave = sum / count
+        if n > max:
+            max = n
+        if n < min:
+            min = n
     except:
         print("bad data")
         continue
 
-print(sum, count, ave)
+print("Minimum:", min, "Maximum: ", max)
