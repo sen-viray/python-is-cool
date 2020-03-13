@@ -12,7 +12,7 @@ try:
 except:
     rate = -1
 if rate < 0:
-    print("Again, that isn't gonna work. Try again.")
+    print("Nope. Try again.")
 
 if int(hours) > 40 :
     pay = int(hours) * (int (rate) * 1.5)
